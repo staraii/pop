@@ -19,7 +19,10 @@ body {
 a, a:link, a:visited, a:focus, a:hover, a:active {
 	text-decoration: none;
 	color: #262626;
+}
 
+p a:hover {
+	text-decoration: underline;
 }
 
 header {
@@ -110,7 +113,6 @@ footer a:hover> i {
 
 section {
 	display: flex;
-	flex-direction: row;
 	background-color: #c2c2c2;
 	min-height: 375px;
 	width: 94%;
@@ -119,25 +121,38 @@ section {
 
 }
 
-section figure {
+section picture {
 	flex-grow: 1;
 	
 }
 
 section article {
-	text-align: center;
+	/*text-align: center;*/
 	flex-grow: 2;
+
+}
+
+p {
+	font-family: Helvetica;
+	margin-bottom: 1em;
+}
+article ul {
+	list-style-type: none;
+}
+article li {
+	font-family: Helvetica;
+
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.5em 0;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-section article h1 {
-	font-size: 2em;
-	margin: 1em;
-}
-
-section article h3 {
-	margin: 1em;
-	margin-bottom: 3em;
+h3 {
+	margin-bottom: 1.5em;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* --------------Mobil----------*/
@@ -202,9 +217,17 @@ section article h3 {
 	
 	}
 
-	section figure {
-		max-width: 250px;
-		min-height: 400px;
+	section {
+		flex-direction: column;
+	}
+
+	section picture {
+		width: 100%;
+	}
+
+	section article {
+
+		flex-grow: 1;
 	}
 
 	footer {
@@ -267,9 +290,19 @@ section article h3 {
 		min-width: 650px;
 	}
 
-	section figure {
+	section {
+		flex-direction: row;
+	}
+
+	section picture {
+		flex-grow: 1;
 		min-width: 225px;
-		width: 13em;
+		width: 30em;
+	}
+
+	section article {
+		margin-left: 3%;
+		flex-grow: 2;
 	}
 
 	footer {
