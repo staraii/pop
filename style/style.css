@@ -143,14 +143,7 @@ main {
 
 .article-2:nth-child(3) {
 	background: #c2c2c2 center/cover url('../img/pexels-cottonbro-studio-4865718.jpg') no-repeat;
-
-/*	min-height: 20rem;
-	min-width: 10rem;
-	background-image: url("/img/pexels-cottonbro-studio-4865718.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-*/
+	flex-grow: 1;
 }
 
 .article-2 a {
