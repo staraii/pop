@@ -88,6 +88,9 @@ menu {
 }
 
 .menu-button {
+	outline: none;
+	background-color: rgb(228, 228, 228);
+	outline: none;
 	border: 0;
 	cursor: pointer;
 }
@@ -97,6 +100,8 @@ menu {
 }
 
 .menu-icon {
+	background-color: rgb(228, 228, 228);
+	outline: none;
 	color: #262626;
 	border: 0;
 	font-size: 3rem;
@@ -245,15 +250,15 @@ footer a:hover> i {
 	}
 
 
-	menu li:active {
-		background-color: #262626;
-		color: rgb(179, 179, 179);
-	}
+menu li:active {
+	background-color: #262626;
+	color: rgb(179, 179, 179);
+}
 
-	.menu-button {
-		display: inline;
-		outline: none;
-	}
+.menu-button {
+	display: inline;
+}
+
 
 main {
 	width: 100%;
