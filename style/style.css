@@ -90,6 +90,7 @@ menu {
 .menu-button {
 	outline: none;
 	background-color: rgb(228, 228, 228);
+	color: #262626;
 	outline: none;
 	border: 0;
 	cursor: pointer;
@@ -97,6 +98,7 @@ menu {
 
 .menu-button:hover {
 	background-color: rgb(228, 228, 228);
+	color: #262626;
 }
 
 .menu-icon {
